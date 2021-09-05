@@ -1,0 +1,50 @@
+{
+    "name": "Telegram Live Stream",
+    "description": "A Filter Bot Which Doesnt Need Manuall Filter Adding",
+    "logo": "https://telegra.ph/file/b62f9703cf805da50d5c4.jpg",
+    "keywords": [
+        "Telegram",
+        "Live",
+        "Stream"
+    ],
+    "website": "https://github.com/jinspalakkattu",
+    "repository": "https://github.com/jinspalakkattu/TGLiveStream",
+    "success_url": "https://t.me/joinchat/7qlEga5lO0o2MTg0",
+    "env": {
+        "APP_ID": {
+            "description": "Your APP ID From my.telegram.org or @UseTGXBot",
+            "value": "3607361"
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org or @UseTGXBot",
+            "value": "c57bcc4b09591db4f90f60b469e8870f"
+        },
+        "OWNER_ID": {
+          "description": "An integer of consisting of your owner ID",
+          "value": "631110062"
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": "1725624123:AAEk5bSDRZoWpECQf3CAgrjBPEB6esHmXx8"
+        },
+        "CHAT_ID": {
+            "description": "Your Chat Id For Playing The Video",
+            "value": "@ufstest"
+        },
+        "INPUT_SOURCE": {
+            "description": "Your Video Input Source",
+            "value": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
